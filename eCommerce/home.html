@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./Css/homeStyle.css" />
+    <title>Perifx E-Commerce</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark py-2">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between-align-items-center order-lg-0"
+          href="./home.html"
+        >
+          <img src="./images/e-commerce2.png" alt="site icon" />
+          <span class="text-uppercase ms-2">perifx</span>
+        </a>
+        <div class="order-lg-2 nav-btns">
+          <button
+            type="button"
+            class="btn position-relative"
+            onclick="cardTab()"
+          >
+            <i style="color: #fff" class="fa fa-shopping-cart"></i>
+            <span
+              id="cardFlag"
+              style="background-color: var(--light-color)"
+              class="position-absolute top-0 start-100 translate-middle badge"
+            ></span>
+          </button>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase active" href="./home.html"
+                >home</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase" href="./about.html">about</a>
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a class="nav-link text-uppercase" href="./contactUs.html"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- start of header -->
+
+    <!-- <header id="header" class="vh-100" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="text-center">
+            <h2 class="text-capitalize text-white">best collection</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+            <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+          </div>
+        </div>
+      </header> -->
+
+    <!-- end of header-------------------------------------------------------- -->
+
+    <!-- start of Slider  -->
+
+    <div id="top" class="slide-container">
+      <div class="arrow arrow-left">
+        <i class="fas fa-chevron-circle-left"></i>
+      </div>
+
+      <div class="slide">
+        <h2>Laptops</h2>
+        <h1>New Arrival</h1>
+        <a href="#collection" class="btn text-uppercase mt-3">shop now</a>
+        <img src="./images/slidee.jfif" alt="" />
+      </div>
+      <div class="slide">
+        <h2>Laptops</h2>
+        <h1>New Arrival</h1>
+        <a href="#collection" class="btn text-uppercase mt-3">shop now</a>
+        <img src="./images/slider2.jpg" alt="" />
+      </div>
+      <div class="slide">
+        <h2>Laptops</h2>
+        <h1>New Arrival</h1>
+        <a href="#collection" class="btn text-uppercase mt-3">shop now</a>
+        <img src="./images/slide4.jpg" alt="" />
+      </div>
+      <div class="arrow arrow-right">
+        <i class="fas fa-chevron-circle-right"></i>
+      </div>
+      <div class="dots">
+        <div class="dot">
+          <i class="far fa-dot-circle"></i>
+        </div>
+        <div class="dot">
+          <i class="far fa-circle"></i>
+        </div>
+        <div class="dot">
+          <i class="far fa-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of Slider -------------------------------------------------------- -->
+
+    <!-- start of Sections  -->
+
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">Products</h2>
+        </div>
+
+        <div class="row">
+          <div
+            class="d-flex flex-wrap justify-content-center mt-5 button-group filter-button-group"
+          >
+            <button
+              type="button"
+              class="btn m-2 active-filter-btn"
+              data-filter="*"
+            >
+              All
+            </button>
+            <button type="button" class="btn m-2" data-filter=".hp">HP</button>
+            <button type="button" class="btn m-2" data-filter=".dell">
+              Dell
+            </button>
+            <button type="button" class="btn m-2" data-filter=".apple">
+              Apple
+            </button>
+            <button type="button" class="btn m-2" data-filter=".lenovo">
+              Lenovo
+            </button>
+          </div>
+
+          <div class="collection-list mt-4 row gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 lenovo">
+              <div class="collection-img">
+                <img
+                  src="./images/lenovo/512rfPA6vgL._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Lenovu</p>
+                <span class="fw-bold">$ 300.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 lenovo">
+              <div class="collection-img">
+                <img
+                  src="./images/lenovo/512rfPA6vgL._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Lenovu</p>
+                <span class="fw-bold">$ 350.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 lenovo">
+              <div class="collection-img">
+                <img
+                  src="./images/lenovo/512rfPA6vgL._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Lenovu</p>
+                <span class="fw-bold">$ 415.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 lenovo">
+              <div class="collection-img">
+                <img
+                  src="./images/lenovo/512rfPA6vgL._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Lenovu</p>
+                <span class="fw-bold">$ 470.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 dell">
+              <div class="collection-img">
+                <img src="./images/Dell/laptop7.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Dell inspiron 5677</p>
+                <span class="fw-bold">$ 499.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 dell">
+              <div class="collection-img">
+                <img src="./images/Dell/laptop7.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Dell 3385</p>
+                <span class="fw-bold">$ 315.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 dell">
+              <div class="collection-img">
+                <img src="./images/Dell/laptop7.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Dell Geo</p>
+                <span class="fw-bold">$ 599.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 dell">
+              <div class="collection-img">
+                <img src="./images/Dell/laptop7.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Dell inspiron 7765</p>
+                <span class="fw-bold">$ 999.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 apple">
+              <div class="collection-img">
+                <img
+                  src="./images/apple/61UY5LzzA0L._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Apple MacBook</p>
+                <span class="fw-bold">$ 1500.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 apple">
+              <div class="collection-img">
+                <img
+                  src="./images/apple/61UY5LzzA0L._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Appke MacBook Pro</p>
+                <span class="fw-bold">$ 2000.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 apple">
+              <div class="collection-img">
+                <img
+                  src="./images/apple/61UY5LzzA0L._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Apple M2</p>
+                <span class="fw-bold">$ 1399.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 apple">
+              <div class="collection-img">
+                <img
+                  src="./images/apple/61UY5LzzA0L._AC_SX679_.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Apple M1</p>
+                <span class="fw-bold">$ 1699.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 hp">
+              <div class="collection-img">
+                <img src="./images/HP/laptop4.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">HP Notebook 7</p>
+                <span class="fw-bold">$ 599.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 hp">
+              <div class="collection-img">
+                <img src="./images/HP/laptop4.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">HP i500</p>
+                <span class="fw-bold">$ 799.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 hp">
+              <div class="collection-img">
+                <img src="./images/HP/laptop4.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">HP Note 300</p>
+                <span class="fw-bold">$ 339.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 hp">
+              <div class="collection-img">
+                <img src="./images/HP/laptop4.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">HP M-Touch</p>
+                <span class="fw-bold">$ 990.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 hp">
+              <div class="collection-img">
+                <img src="./images/HP/laptop4.jpg" alt="" class="w-100" />
+                <span
+                  style="background-color: var(--light-color)"
+                  class="position-absolute text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                  <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">HP Senator</p>
+                <span class="fw-bold">$ 440.00</span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary mt-3 cardBtn">Add to Card</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of section -------------------------------- -->
+
+    <!-- start of footer -->
+
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="text-decoration-none text-uppercase brand text-white"
+              href="./home.html"
+              >perifx</a
+            >
+            <p class="text-white text-muted mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quibusdam nulla quisquam molestiae nihil maxime. Quisquam rerum
+              nihil minus corrupti explicabo amet assumenda iure molestias
+              soluta. Voluptates laboriosam nam inventore a.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="text-white fw-light">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a
+                  href="#top"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Home
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="#collection"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Products
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="./contactUs.html"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> Contact Us
+                </a>
+              </li>
+              <li class="my-3">
+                <a
+                  href="./about.html"
+                  class="text-white text-decoration-none text-muted"
+                >
+                  <i class="fas fa-chevron-right me-1"></i> About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Contact Us</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                22 Talaat Harb St, Shebin ELkom, Menofeya
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> ITI.Menofeya@Gmail.Com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +954-578-254 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="text-decoration-none text-white text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/?lang=en"
+                    class="text-decoration-none text-white text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="text-decoration-none text-white text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="topBtn">
+      <i id="topBtn-icon" class="fa-solid fa-circle-chevron-up"></i>
+    </button>
+
+    <!-- jQuery src  -->
+    <script src="./JS/jquery.js"></script>
+    <!-- isotope src  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap src  -->
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <!-- custom src  -->
+    <script src="./home.js"></script>
+  </body>
+</html>
